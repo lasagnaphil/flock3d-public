@@ -1,0 +1,90 @@
+{
+	"folders":
+	[
+		{
+			"path": "."
+		}
+	],
+	"build_systems":
+    [
+        {
+            "name": "Configure",
+            "cmd": "python tools/fbuild.py configure",
+            "working_dir": "$project_path"
+        },
+        {
+            "name": "Build flock3d (Debug)",
+            "cmd": "python tools/fbuild.py build flock3d-x64-Debug",
+            "file_regex": "^([^\\(]+)\\(([0-9]+),([0-9]+)?\\).*$",
+            "working_dir": "$project_path"
+        },
+        {
+            "name": "Build flock3d (Release)",
+            "cmd": "python tools/fbuild.py build flock3d-x64-Release",
+            "file_regex": "^([^\\(]+)\\(([0-9]+),([0-9]+)?\\).*$",
+            "working_dir": "$project_path"
+        },
+        {
+            "name": "Build linavg_test (Debug)",
+            "cmd": "python tools/fbuild.py build linavg_test-x64-Debug",
+            "file_regex": "^([^\\(]+)\\(([0-9]+),([0-9]+)?\\).*$",
+            "working_dir": "$project_path"
+        },
+        {
+            "name": "Build linavg_test (Release)",
+            "cmd": "python tools/fbuild.py build linavg_test-x64-Release",
+            "file_regex": "^([^\\(]+)\\(([0-9]+),([0-9]+)?\\).*$",
+            "working_dir": "$project_path"
+        },
+        {
+            "name": "Build tests (Debug)",
+            "cmd": "python tools/fbuild.py build tests-x64-Debug",
+            "file_regex": "^([^\\(]+)\\(([0-9]+),([0-9]+)?\\).*$",
+            "working_dir": "$project_path"
+        },
+        {
+            "name": "Build tests (Release)",
+            "cmd": "python tools/fbuild.py build tests-x64-Release",
+            "file_regex": "^([^\\(]+)\\(([0-9]+),([0-9]+)?\\).*$",
+            "working_dir": "$project_path"
+        },
+        {
+        	"name": "Run flock3d (Debug)",
+        	"shell_cmd": "cmd /K .\\_bin\\Debug\\flock3d.exe",
+            "working_dir": "$project_path",
+        },
+        {
+        	"name": "Run flock3d (Release)",
+        	"shell_cmd": "cmd /K .\\_bin\\Release\\flock3d.exe",
+            "working_dir": "$project_path",
+        },
+        {
+            "name": "Run linavg_test (Debug)",
+            "shell_cmd": "cmd /K .\\_bin\\Debug\\linavg_test.exe",
+            "working_dir": "$project_path",
+        },
+        {
+            "name": "Run linavg_test (Release)",
+            "shell_cmd": "cmd /K .\\_bin\\Release\\linavg_test.exe",
+            "working_dir": "$project_path",
+        },
+        {
+            "name": "Run tests (Debug)",
+            "shell_cmd": "cmd /K .\\_bin\\Debug\\test_ecs.exe",
+            "working_dir": "$project_path",
+        },
+        {
+            "name": "Run tests (Release)",
+            "shell_cmd": "cmd /K .\\_bin\\Release\\test_ecs.exe",
+            "working_dir": "$project_path",
+        },
+        {
+            "name": "Debug flock3d with RemedyBG (Debug)",
+            "shell_cmd": "remedybg.exe -g .\\_bin\\Debug\\flock3d.exe"
+        },
+        {
+            "name": "Debug flock3d with RemedyBG (Release)",
+            "shell_cmd": "remedybg.exe -g .\\_bin\\Release\\flock3d.exe"
+        }
+    ],
+}

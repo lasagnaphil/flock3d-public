@@ -1,0 +1,11 @@
+Model Information:
+* title:	Mechanical Bird
+* source:	https://sketchfab.com/3d-models/mechanical-bird-c534205852cb47c3874ad5495893b69a
+* author:	Susannetjotta (https://sketchfab.com/susannetjotta)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Mechanical Bird" (https://sketchfab.com/3d-models/mechanical-bird-c534205852cb47c3874ad5495893b69a) by Susannetjotta (https://sketchfab.com/susannetjotta) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
