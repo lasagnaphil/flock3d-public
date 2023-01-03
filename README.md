@@ -6,4 +6,13 @@
 - Python (for build script)
 - Vulkan 1.3.216 (exact version) must be installed
 
-## Screenshots
+## Build & Run
+
+```
+python tools\fbuild.py configure
+python tools\fbuild.py build flock3d-x64-Release
+.\_bin\Release\flock3d.exe
+```
+
+## Video
+
