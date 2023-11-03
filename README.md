@@ -1,4 +1,4 @@
-# flock3d (Temporary public release)
+# flock3d
 
 ## Prerequisites
 
